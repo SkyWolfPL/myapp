@@ -4,7 +4,7 @@ RUN zypper ref && zypper install -y python3 python3-pip
 
 RUN mkdir /app
 WORKDIR /app
-COPY src/* . /app/
+COPY src/* /app/
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8081
